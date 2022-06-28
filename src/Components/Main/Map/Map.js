@@ -6,7 +6,7 @@ export const Map = () => {
     <MapContainer
       className="App__main-map-wrap"
       center={[48.45991953947251, 34.981214592906994]}
-      zoom={10}
+      zoom={11}
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       <Marker position={[48.407307771758134, 35.047947883429494]}>
