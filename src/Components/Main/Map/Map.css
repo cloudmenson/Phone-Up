@@ -1,19 +1,30 @@
 .leaflet-container {
-  width: 1200px;
+  width: 1100px;
   height: 55vh;
   background: #fafafa;
+}
+
+@media (max-width: 1140px) {
+  .leaflet-container {
+    width: 900px;
+    height: 50vh;
+  }
 }
 
 @media (max-width: 991px) {
   .leaflet-container {
     width: 700px;
-    height: 50vh;
   }
 }
 
 @media (max-width: 760px) {
   .leaflet-container {
-    width: 500px;
-    height: 50vh;
+    width: 600px;
+  }
+}
+
+@media (max-width: 660px) {
+  .leaflet-container {
+    width: 350px;
   }
 }
