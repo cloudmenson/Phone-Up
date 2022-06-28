@@ -1,0 +1,19 @@
+.leaflet-container {
+  width: 1200px;
+  height: 55vh;
+  background: #fafafa;
+}
+
+@media (max-width: 991px) {
+  .leaflet-container {
+    width: 700px;
+    height: 50vh;
+  }
+}
+
+@media (max-width: 760px) {
+  .leaflet-container {
+    width: 340px;
+    height: 50vh;
+  }
+}
