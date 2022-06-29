@@ -6,14 +6,40 @@ import {
   Tr,
   Th,
   Td,
-  TableContainer,
+  TableContainer
 } from "@chakra-ui/react";
+import {Box, Img, Text} from "@chakra-ui/react";
+import iphoneImage from "../../../assets/img/iphone.svg"
 import "./Table.css";
 
-export const PriceTable = () => {
+export const Iphone = () => {
   return (
-    <TableContainer sx={{ marginTop: "150px" }}>
-      <Table id="services-section" size={{ base: "sm" }}>
+    <TableContainer sx={
+      {marginTop: "150px"}
+    }>
+      <Box sx={
+        {
+          margin: "15px 0",
+          width: "100px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center"
+        }
+      }>
+        <Img sx={
+            {
+              width: "50px",
+              height: "50px"
+            }
+          }
+          src={iphoneImage}
+          alt="iphone"/>
+        <Text>iPhone</Text>
+      </Box>
+      <Table id="services-section"
+        size={
+          {base: "sm"}
+      }>
         <Thead>
           <Tr className="App__main-table-td">
             <Th color="red.500">Послуги</Th>
@@ -44,7 +70,8 @@ export const PriceTable = () => {
           <Tr className="App__main-table-tr">
             <Td>
               Заміна дисплейного
-              <br /> модуля
+              <br/>
+              модуля
             </Td>
             <Td>450</Td>
             <Td>600</Td>
@@ -95,7 +122,8 @@ export const PriceTable = () => {
           <Tr className="App__main-table-tr">
             <Td>
               Заміна фронтальної
-              <br /> камери
+              <br/>
+              камери
             </Td>
             <Td>150</Td>
             <Td>200</Td>
@@ -110,7 +138,7 @@ export const PriceTable = () => {
           <Tr className="App__main-table-tr">
             <Td>
               Заміна шлейфу кнопки
-              <br />
+              <br/>
               увімкнення/вимкнення
             </Td>
             <Td>200</Td>
@@ -126,8 +154,10 @@ export const PriceTable = () => {
           <Tr className="App__main-table-tr">
             <Td>
               Заміна шлейфу
-              <br /> мікрофона + рознімання
-              <br /> синхронізації
+              <br/>
+              мікрофона + рознімання
+              <br/>
+              синхронізації
             </Td>
             <Td>200</Td>
             <Td>250</Td>
@@ -142,7 +172,8 @@ export const PriceTable = () => {
           <Tr className="App__main-table-tr">
             <Td>
               Заміна шлейфу
-              <br /> кнопки Home
+              <br/>
+              кнопки Home
             </Td>
             <Td>200</Td>
             <Td>250</Td>
@@ -157,7 +188,8 @@ export const PriceTable = () => {
           <Tr className="App__main-table-tr">
             <Td>
               Заміна шлейфу
-              <br /> з датчиком наближення
+              <br/>
+              з датчиком наближення
             </Td>
             <Td>150</Td>
             <Td>200</Td>
@@ -172,7 +204,8 @@ export const PriceTable = () => {
           <Tr className="App__main-table-tr">
             <Td>
               Заміна голосового
-              <br /> динаміка
+              <br/>
+              динаміка
             </Td>
             <Td>150</Td>
             <Td>200</Td>
@@ -187,7 +220,8 @@ export const PriceTable = () => {
           <Tr className="App__main-table-tr">
             <Td>
               Заміна поліфонічного
-              <br /> динаміка
+              <br/>
+              динаміка
             </Td>
             <Td>150</Td>
             <Td>200</Td>
@@ -202,7 +236,8 @@ export const PriceTable = () => {
           <Tr className="App__main-table-tr">
             <Td>
               Заміна кнопок
-              <br /> регулювання гучності
+              <br/>
+              регулювання гучності
             </Td>
             <Td>150</Td>
             <Td>200</Td>
@@ -216,7 +251,8 @@ export const PriceTable = () => {
           </Tr>
           <Tr className="App__main-table-tr">
             <Td>
-              Заміна елементів <br />
+              Заміна елементів
+              <br/>
               ланцюгів живлення
             </Td>
             <Td>вiд 300</Td>
@@ -232,8 +268,10 @@ export const PriceTable = () => {
           <Tr className="App__main-table-tr">
             <Td>
               Заміна елементів
-              <br /> ланцюгів управління
-              <br /> дисплеєм та тачскрином
+              <br/>
+              ланцюгів управління
+              <br/>
+              дисплеєм та тачскрином
             </Td>
             <Td>вiд 400</Td>
             <Td>вiд 400</Td>
@@ -248,7 +286,8 @@ export const PriceTable = () => {
           <Tr className="App__main-table-tr">
             <Td>
               Заміна елементів
-              <br /> ланцюга WIFI
+              <br/>
+              ланцюга WIFI
             </Td>
             <Td>от 500</Td>
             <Td>от 500</Td>
@@ -287,7 +326,8 @@ export const PriceTable = () => {
           <Tr className="App__main-table-tr">
             <Td>
               Заміна скла
-              <br /> камери
+              <br/>
+              камери
             </Td>
             <Td>150</Td>
             <Td>200</Td>
@@ -331,4 +371,4 @@ export const PriceTable = () => {
   );
 };
 
-export default PriceTable;
+export default Iphone;
