@@ -19,8 +19,9 @@ import {FiTv} from "react-icons/fi";
 import {FaRegHandshake} from "react-icons/fa";
 import {Link as ScrollLink} from "react-scroll";
 import ServiceImage1 from "../../assets/img/service-image1.svg";
-import PriceTable from "./PriceTable/Iphone";
-import Ipad from "./PriceTable/Ipad";
+import IphonePrice from "./PriceTable/Iphone";
+import IpadPrice from "./PriceTable/Ipad";
+import MacBookPrice from "./PriceTable/MacBook";
 import "./Main.css";
 
 export const Main = () => {
@@ -84,7 +85,7 @@ export const Main = () => {
                 lg: "35px"
               }
           }>
-            Phone Up
+            Phone Up - Сервісний центр
           </Heading>
           <Text sx={
               {
@@ -100,7 +101,7 @@ export const Main = () => {
               }
           }>
             Наш індивідуальний підхід до кожного клієнта дозволяє знайти
-                                                          оптимальне вирішення проблеми
+            оптимальне вирішення проблеми
           </Text>
           <Box sx={
             {margin: "50px 0"}
@@ -278,8 +279,8 @@ export const Main = () => {
               }
           }>
             Ми пропонуємо вигідні умови на професійний сервіс відновлення
-                      пошкоджених або не працюючих пристроїв. Перш ніж перейти до ремонту,
-                      ми обов'язково проводимо ретельну та багаторівневу діагностику.
+            пошкоджених або не працюючих пристроїв. Перш ніж перейти до ремонту,
+            ми обов'язково проводимо ретельну та багаторівневу діагностику.
           </Text>
           <Box display={
               {
@@ -307,8 +308,9 @@ export const Main = () => {
               lg: "block"
             }
         }>
-          <PriceTable/>
-          <Ipad/>
+          <IphonePrice/>
+          <IpadPrice/>
+          <MacBookPrice/>
         </Box>
         <Flex sx={
           {
@@ -369,7 +371,7 @@ export const Main = () => {
             {margin: "50px  0"}
           }>
             Ви можете зателефонувати або відвідати нас одразу. Оберіть
-                                                          будь-ласка зручну для вас адресу та номер:
+            будь-ласка зручну для вас адресу та номер:
           </Text>
           <Box>
             <List spacing={3}>

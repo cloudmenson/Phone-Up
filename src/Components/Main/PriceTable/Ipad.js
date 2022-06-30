@@ -9,7 +9,7 @@ import {
   TableContainer
 } from "@chakra-ui/react";
 import {Box, Img, Text} from "@chakra-ui/react";
-import ipadImage from "../../../assets/img/ipad.svg"
+import IpadImage from "../../../assets/img/ipad.svg"
 import "./Table.css";
 
 export const Ipad = () => {
@@ -32,7 +32,7 @@ export const Ipad = () => {
               height: "50px"
             }
           }
-          src={ipadImage}
+          src={IpadImage}
           alt="ipad"/>
         <Text>iPad</Text>
       </Box>

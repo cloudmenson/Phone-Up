@@ -29,7 +29,7 @@ export const Header = () => {
       }>
         <Box>
           <Link>
-            <Img height="100px" width="150px" className="App__header-logo" href="#"
+            <Img height="75px" width="155px" className="App__header-logo" href="#"
               src={Logo}
               alt="Phone Up"/>
           </Link>

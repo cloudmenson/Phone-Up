@@ -25,8 +25,8 @@ export const Footer = () => {
           <Link>
             <Img className="App__footer-logo" href="#"
               src={Logo}
-              height="100px"
-              width="150px"
+              height="75px"
+              width="155px"
               alt="Phone Up"/>
           </Link>
         </Box>
