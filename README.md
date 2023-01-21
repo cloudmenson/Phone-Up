@@ -1,6 +1,6 @@
 # Phone Up https://phone-up-dnipro.com
 
-My relative asked me to make a simple business card website for his business
+Business card website on order to improve store attendance
 
 `Components:` 
 - React 
