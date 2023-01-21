@@ -7,6 +7,3 @@ Business card website on order to improve store attendance
 - React-leaflet 
 - Chakra UI 
 - Netlify
-
- # Getting Started Open terminal and install dependencies with command: 
-`npm install` then run: `npm start` to start.
