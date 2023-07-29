@@ -1,4 +1,8 @@
-.App__footer {
+import styled from "styled-components";
+import { Link as ScrollLink } from "react-scroll";
+import { AiOutlineArrowUp } from "react-icons/ai";
+
+export const Footer = styled.footer`
   padding: 0 40px;
   background: rgb(187, 63, 54);
   background: -moz-linear-gradient(
@@ -17,32 +21,36 @@
     rgba(255, 255, 255, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bb3f36",endColorstr="#ffffff",GradientType=1);
-}
-.App__footer-link {
+`;
+
+export const LinkTo = styled(ScrollLink)`
   box-shadow: none !important;
   padding: 0 15px;
   font-size: 22px;
   color: #000000;
   font-weight: 700;
-}
-.App__footer-link:hover {
-  cursor: pointer;
-  color: #ffffff;
-}
-.App__footer-arrow-up {
+
+  :hover {
+    cursor: pointer;
+    color: #ffffff;
+  }
+`;
+
+export const ArrowUpLink = styled(AiOutlineArrowUp)`
   width: 50px;
   height: 50px;
   margin-left: 40px;
-}
-@media (max-width: 479px) {
-  .App__footer-arrow-up {
-    width: 30px;
-    height: 30px;
-    margin-left: 0;
-  }
-}
-@media (max-width: 425px) {
-  .App__footer {
-    padding: 0 20px;
-  }
-}
+`;
+
+// @media (max-width: 479px) {
+//   .App__footer-arrow-up {
+//     width: 30px;
+//     height: 30px;
+//     margin-left: 0;
+//   }
+// }
+// @media (max-width: 425px) {
+//   .App__footer {
+//     padding: 0 20px;
+//   }
+// }
