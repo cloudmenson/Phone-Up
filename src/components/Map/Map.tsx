@@ -1,12 +1,11 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "./Map.css";
 
-export const Map = () => {
+const Map = () => {
   return (
     <MapContainer
-      className="App__main-map-wrap"
-      center={[48.45991953947251, 34.981214592906994]}
       zoom={11}
+      // className="App__main-map-wrap"
+      center={[48.45991953947251, 34.981214592906994]}
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       <Marker position={[48.407307771758134, 35.047947883429494]}>
@@ -28,4 +27,4 @@ export const Map = () => {
   );
 };
 
-export default Map;
+export { Map };
