@@ -334,11 +334,11 @@ const MainPage = () => {
               </ListItem>
               <ListItem>
                 <ListIcon as={PhoneIcon} color="red.500" />
-                <Link href="tel:+380679712315">067-97-12-315</Link>
+                <Link href="tel:+380679712315">067-971-23-15</Link>
               </ListItem>
               <ListItem>
                 <ListIcon as={PhoneIcon} color="red.500" />
-                <Link href="tel:+380951544336">095-15-44-336</Link>
+                <Link href="tel:+380951544336">095-154-43-36</Link>
               </ListItem>
             </List>
             <List sx={{ marginTop: "25px" }} spacing={3}>
@@ -346,10 +346,6 @@ const MainPage = () => {
               <ListItem>
                 <ListIcon as={AiFillEnvironment} color="red.500" />
                 Бульвар Слави, 46
-              </ListItem>
-              <ListItem>
-                <ListIcon as={AiFillEnvironment} color="red.500" />
-                Велика Діївська, 40к
               </ListItem>
               <ListItem>
                 <ListIcon as={AiFillEnvironment} color="red.500" />

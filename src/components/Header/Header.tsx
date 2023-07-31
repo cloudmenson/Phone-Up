@@ -178,6 +178,44 @@ const Header = () => {
                   063-836-55-82
                 </Link>
               </MenuItem>
+              <MenuItem>
+                <Link
+                  fontSize={{
+                    sm: "15px",
+                    md: "15px",
+                    lg: "22px",
+                  }}
+                  href="tel:+380679712315"
+                  sx={{
+                    padding: "0",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <PhoneIcon sx={{ margin: "0 6px" }} />
+                  067-971-23-15
+                </Link>
+              </MenuItem>
+              <MenuItem>
+                <Link
+                  fontSize={{
+                    sm: "15px",
+                    md: "15px",
+                    lg: "22px",
+                  }}
+                  href="tel:+380951544336"
+                  sx={{
+                    padding: "0",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <PhoneIcon sx={{ margin: "0 6px" }} />
+                  095-154-43-36
+                </Link>
+              </MenuItem>
             </MenuList>
           </Menu>
         </Styles.Box>
