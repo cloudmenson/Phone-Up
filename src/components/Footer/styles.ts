@@ -1,20 +1,11 @@
 import styled from "styled-components";
 import { Link as ScrollLink } from "react-scroll";
 import { AiOutlineArrowUp } from "react-icons/ai";
+import { Flex as FlexBox } from "@chakra-ui/react";
 
 export const Footer = styled.footer`
-  padding: 0 40px;
+  padding: 20px;
   background: rgb(187, 63, 54);
-  background: -moz-linear-gradient(
-    335deg,
-    rgba(187, 63, 54, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    335deg,
-    rgba(187, 63, 54, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
   background: linear-gradient(
     335deg,
     rgba(187, 63, 54, 1) 0%,
@@ -23,34 +14,31 @@ export const Footer = styled.footer`
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bb3f36",endColorstr="#ffffff",GradientType=1);
 `;
 
+export const Flex = styled(FlexBox)`
+  @media (max-width: 768px) {
+    flex-direction: column !important;
+  }
+`;
+
 export const LinkTo = styled(ScrollLink)`
   box-shadow: none !important;
-  padding: 0 15px;
-  font-size: 22px;
   color: #000000;
-  font-weight: 700;
 
   :hover {
-    cursor: pointer;
     color: #ffffff;
+    cursor: pointer;
   }
 `;
 
 export const ArrowUpLink = styled(AiOutlineArrowUp)`
+  margin-left: 40px;
   width: 50px;
   height: 50px;
-  margin-left: 40px;
-`;
 
-// @media (max-width: 479px) {
-//   .App__footer-arrow-up {
-//     width: 30px;
-//     height: 30px;
-//     margin-left: 0;
-//   }
-// }
-// @media (max-width: 425px) {
-//   .App__footer {
-//     padding: 0 20px;
-//   }
-// }
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-top: 15px;
+    width: 40px;
+    height: 40px;
+  }
+`;

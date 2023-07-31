@@ -1,40 +1,58 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const StylizedContainer = styled.div`
   .leaflet-container {
-    width: 1350px;
-    height: 50vh;
-    background: #fafafa;
+    width: 1600px;
+    height: 40vh;
+    background: #ffffff;
   }
 
-  @media (max-width: 1140px) {
+  @media (max-width: 1660px) {
+    .leaflet-container {
+      width: 1300px;
+    }
+  }
+
+  @media (max-width: 1440px) {
     .leaflet-container {
       width: 1000px;
-      height: 50vh;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .leaflet-container {
+      width: 800px;
     }
   }
 
   @media (max-width: 991px) {
     .leaflet-container {
-      width: 750px;
+      width: 700px;
     }
   }
 
-  @media (max-width: 760px) {
+  @media (max-width: 768px) {
     .leaflet-container {
-      width: 650px;
+      width: 600px;
+      height: 30vh;
     }
   }
 
-  @media (max-width: 660px) {
+  @media (max-width: 668px) {
     .leaflet-container {
       width: 500px;
     }
   }
 
-  @media (max-width: 530px) {
+  @media (max-width: 538px) {
     .leaflet-container {
       width: 360px;
+    }
+  }
+
+  @media (max-width: 376px) {
+    .leaflet-container {
+      width: 300px;
     }
   }
 `;

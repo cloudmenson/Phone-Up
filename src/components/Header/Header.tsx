@@ -30,12 +30,12 @@ const Header = () => {
         }}
       >
         <Box>
-          <Link href="#">
+          <Link href="/">
             <Img src={Logo} height="75px" width="155px" alt="Phone-Up" />
           </Link>
         </Box>
         <Spacer />
-        <Box sx={{ fontWeight: "600" }} className="App__header-links">
+        <Styles.HeaderLinks sx={{ fontWeight: "600" }}>
           <Breadcrumb>
             <BreadcrumbItem>
               <Styles.LinkTo
@@ -89,19 +89,15 @@ const Header = () => {
               </Styles.LinkTo>
             </BreadcrumbItem>
           </Breadcrumb>
-        </Box>
+        </Styles.HeaderLinks>
         <Spacer />
-        <Box
-          sx={{ fontWeight: "600",  }}
-          className="App__header-phone-number-box"
-        >
+        <Styles.PhoneWrapper sx={{ fontWeight: "600" }}>
           <Link
             fontSize={{
               lg: "18px",
               base: "15px",
             }}
             href="tel:+380638365582"
-            className="App__header-link-number App__header-link"
             sx={{
               padding: "0",
               display: "flex",
@@ -112,9 +108,8 @@ const Header = () => {
             <PhoneIcon sx={{ margin: "0 6px" }} />
             063-836-55-82
           </Link>
-        </Box>
-        <Box
-          className="App__main-burger-menu"
+        </Styles.PhoneWrapper>
+        <Styles.Box
           sx={{
             color: "black",
             marginLeft: "15px",
@@ -172,7 +167,6 @@ const Header = () => {
                     lg: "22px",
                   }}
                   href="tel:+380638365582"
-                  className="App__header-link-number App__header-link"
                   sx={{
                     padding: "0",
                     display: "flex",
@@ -186,7 +180,7 @@ const Header = () => {
               </MenuItem>
             </MenuList>
           </Menu>
-        </Box>
+        </Styles.Box>
       </Flex>
     </Styles.Header>
   );

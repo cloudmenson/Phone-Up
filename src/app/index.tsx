@@ -1,17 +1,17 @@
 import { ChakraProvider } from "@chakra-ui/react";
 
-import { HomePage } from "components/pages/homePage";
+import { MainPage, Header, Footer } from "components";
 import { GlobalStyles } from "styles/globalStyles";
 
-import * as Styles from "./styles";
+// import * as Styles from "./styles";
 
 const App = () => {
   return (
     <ChakraProvider>
       <GlobalStyles />
-      <Styles.Wrapper>
-        <HomePage />
-      </Styles.Wrapper>
+      <Header />
+      <MainPage />
+      <Footer />
     </ChakraProvider>
   );
 };

@@ -1,4 +1,6 @@
 import {
+  Td,
+  Th,
   Box,
   Img,
   Text,
@@ -38,218 +40,218 @@ const IpadPrice = () => {
       <Table id="services-section" size={{ base: "sm" }}>
         <Thead>
           <Styles.TableTr>
-            <Styles.TableTh color="red.500">Послуги</Styles.TableTh>
-            <Styles.TableTh color="red.500">iPad 2 / 3 / 4</Styles.TableTh>
-            <Styles.TableTh color="red.500">iPad Mini 1 / 2 / 3</Styles.TableTh>
-            <Styles.TableTh color="red.500">iPad Air / 2017</Styles.TableTh>
-            <Styles.TableTh color="red.500">iPad Air 2</Styles.TableTh>
-            <Styles.TableTh color="red.500">iPad Mini 4</Styles.TableTh>
-            <Styles.TableTh color="red.500">iPad Pro 9.7 / 12.9</Styles.TableTh>
-            <Styles.TableTh color="red.500">iPad Pro 10.5</Styles.TableTh>
+            <Th color="red.500">Послуги</Th>
+            <Th color="red.500">iPad 2 / 3 / 4</Th>
+            <Th color="red.500">iPad Mini 1 / 2 / 3</Th>
+            <Th color="red.500">iPad Air / 2017</Th>
+            <Th color="red.500">iPad Air 2</Th>
+            <Th color="red.500">iPad Mini 4</Th>
+            <Th color="red.500">iPad Pro 9.7 / 12.9</Th>
+            <Th color="red.500">iPad Pro 10.5</Th>
           </Styles.TableTr>
         </Thead>
         <Tbody>
           <Styles.TableTr>
-            <Styles.TableTd>
+            <Td>
               Заміна скла та сенсорної
               <br />
               панелі
-            </Styles.TableTd>
-            <Styles.TableTd>700</Styles.TableTd>
-            <Styles.TableTd>900</Styles.TableTd>
-            <Styles.TableTd>900</Styles.TableTd>
-            <Styles.TableTd>4500</Styles.TableTd>
-            <Styles.TableTd>3700</Styles.TableTd>
-            <Styles.TableTd>4500 / 5500</Styles.TableTd>
-            <Styles.TableTd>5500</Styles.TableTd>
+            </Td>
+            <Td>700</Td>
+            <Td>900</Td>
+            <Td>900</Td>
+            <Td>4500</Td>
+            <Td>3700</Td>
+            <Td>4500 / 5500</Td>
+            <Td>5500</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>Заміна дисплея</Styles.TableTd>
-            <Styles.TableTd>1200</Styles.TableTd>
-            <Styles.TableTd>1200</Styles.TableTd>
-            <Styles.TableTd>1800</Styles.TableTd>
-            <Styles.TableTd>4500</Styles.TableTd>
-            <Styles.TableTd>3700</Styles.TableTd>
-            <Styles.TableTd>4500 / 5500</Styles.TableTd>
-            <Styles.TableTd>5500</Styles.TableTd>
+            <Td>Заміна дисплея</Td>
+            <Td>1200</Td>
+            <Td>1200</Td>
+            <Td>1800</Td>
+            <Td>4500</Td>
+            <Td>3700</Td>
+            <Td>4500 / 5500</Td>
+            <Td>5500</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>Заміна батареї</Styles.TableTd>
-            <Styles.TableTd>800</Styles.TableTd>
-            <Styles.TableTd>1000</Styles.TableTd>
-            <Styles.TableTd>1000</Styles.TableTd>
-            <Styles.TableTd>1000</Styles.TableTd>
-            <Styles.TableTd>1000</Styles.TableTd>
-            <Styles.TableTd>1000 / 1500</Styles.TableTd>
-            <Styles.TableTd>1500</Styles.TableTd>
+            <Td>Заміна батареї</Td>
+            <Td>800</Td>
+            <Td>1000</Td>
+            <Td>1000</Td>
+            <Td>1000</Td>
+            <Td>1000</Td>
+            <Td>1000 / 1500</Td>
+            <Td>1500</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>
+            <Td>
               Заміна кнопки включення/
               <br />
               виключення
-            </Styles.TableTd>
-            <Styles.TableTd>400</Styles.TableTd>
-            <Styles.TableTd>500</Styles.TableTd>
-            <Styles.TableTd>500</Styles.TableTd>
-            <Styles.TableTd>800</Styles.TableTd>
-            <Styles.TableTd>800</Styles.TableTd>
-            <Styles.TableTd>1000</Styles.TableTd>
-            <Styles.TableTd>1000</Styles.TableTd>
+            </Td>
+            <Td>400</Td>
+            <Td>500</Td>
+            <Td>500</Td>
+            <Td>800</Td>
+            <Td>800</Td>
+            <Td>1000</Td>
+            <Td>1000</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>
+            <Td>
               Заміна кнопок
               <br />
               регулювання гучності
-            </Styles.TableTd>
-            <Styles.TableTd>400</Styles.TableTd>
-            <Styles.TableTd>500</Styles.TableTd>
-            <Styles.TableTd>500</Styles.TableTd>
-            <Styles.TableTd>800</Styles.TableTd>
-            <Styles.TableTd>800</Styles.TableTd>
-            <Styles.TableTd>1000</Styles.TableTd>
-            <Styles.TableTd>1000</Styles.TableTd>
+            </Td>
+            <Td>400</Td>
+            <Td>500</Td>
+            <Td>500</Td>
+            <Td>800</Td>
+            <Td>800</Td>
+            <Td>1000</Td>
+            <Td>1000</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>Заміна кнопки Home</Styles.TableTd>
-            <Styles.TableTd>400</Styles.TableTd>
-            <Styles.TableTd>500</Styles.TableTd>
-            <Styles.TableTd>500</Styles.TableTd>
-            <Styles.TableTd>800</Styles.TableTd>
-            <Styles.TableTd>800</Styles.TableTd>
-            <Styles.TableTd>800</Styles.TableTd>
-            <Styles.TableTd>-</Styles.TableTd>
+            <Td>Заміна кнопки Home</Td>
+            <Td>400</Td>
+            <Td>500</Td>
+            <Td>500</Td>
+            <Td>800</Td>
+            <Td>800</Td>
+            <Td>800</Td>
+            <Td>-</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>
+            <Td>
               Заміна шлейфу гнізда
               <br />
               синхронізації
-            </Styles.TableTd>
-            <Styles.TableTd>400</Styles.TableTd>
-            <Styles.TableTd>700</Styles.TableTd>
-            <Styles.TableTd>700</Styles.TableTd>
-            <Styles.TableTd>800</Styles.TableTd>
-            <Styles.TableTd>800</Styles.TableTd>
-            <Styles.TableTd>1000</Styles.TableTd>
-            <Styles.TableTd>1000</Styles.TableTd>
+            </Td>
+            <Td>400</Td>
+            <Td>700</Td>
+            <Td>700</Td>
+            <Td>800</Td>
+            <Td>800</Td>
+            <Td>1000</Td>
+            <Td>1000</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>Заміна динаміка</Styles.TableTd>
-            <Styles.TableTd>500</Styles.TableTd>
-            <Styles.TableTd>600</Styles.TableTd>
-            <Styles.TableTd>600</Styles.TableTd>
-            <Styles.TableTd>800</Styles.TableTd>
-            <Styles.TableTd>600</Styles.TableTd>
-            <Styles.TableTd>1000</Styles.TableTd>
-            <Styles.TableTd>1000</Styles.TableTd>
+            <Td>Заміна динаміка</Td>
+            <Td>500</Td>
+            <Td>600</Td>
+            <Td>600</Td>
+            <Td>800</Td>
+            <Td>600</Td>
+            <Td>1000</Td>
+            <Td>1000</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>Заміна основної камери</Styles.TableTd>
-            <Styles.TableTd>400</Styles.TableTd>
-            <Styles.TableTd>700</Styles.TableTd>
-            <Styles.TableTd>700</Styles.TableTd>
-            <Styles.TableTd>800</Styles.TableTd>
-            <Styles.TableTd>800</Styles.TableTd>
-            <Styles.TableTd>1400</Styles.TableTd>
-            <Styles.TableTd>1500</Styles.TableTd>
+            <Td>Заміна основної камери</Td>
+            <Td>400</Td>
+            <Td>700</Td>
+            <Td>700</Td>
+            <Td>800</Td>
+            <Td>800</Td>
+            <Td>1400</Td>
+            <Td>1500</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>Заміна фронтальної камери</Styles.TableTd>
-            <Styles.TableTd>400</Styles.TableTd>
-            <Styles.TableTd>700</Styles.TableTd>
-            <Styles.TableTd>700</Styles.TableTd>
-            <Styles.TableTd>800</Styles.TableTd>
-            <Styles.TableTd>800</Styles.TableTd>
-            <Styles.TableTd>1400</Styles.TableTd>
-            <Styles.TableTd>1000</Styles.TableTd>
+            <Td>Заміна фронтальної камери</Td>
+            <Td>400</Td>
+            <Td>700</Td>
+            <Td>700</Td>
+            <Td>800</Td>
+            <Td>800</Td>
+            <Td>1400</Td>
+            <Td>1000</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>Заміна WIFI антени</Styles.TableTd>
-            <Styles.TableTd>300</Styles.TableTd>
-            <Styles.TableTd>300</Styles.TableTd>
-            <Styles.TableTd>400</Styles.TableTd>
-            <Styles.TableTd>500</Styles.TableTd>
-            <Styles.TableTd>500</Styles.TableTd>
-            <Styles.TableTd>600</Styles.TableTd>
-            <Styles.TableTd>600</Styles.TableTd>
+            <Td>Заміна WIFI антени</Td>
+            <Td>300</Td>
+            <Td>300</Td>
+            <Td>400</Td>
+            <Td>500</Td>
+            <Td>500</Td>
+            <Td>600</Td>
+            <Td>600</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>
+            <Td>
               Заміна елементів ланцюгів
               <br />
               живлення
-            </Styles.TableTd>
-            <Styles.TableTd>від 400</Styles.TableTd>
-            <Styles.TableTd>від 400</Styles.TableTd>
-            <Styles.TableTd>від 600</Styles.TableTd>
-            <Styles.TableTd>від 700</Styles.TableTd>
-            <Styles.TableTd>від 800</Styles.TableTd>
-            <Styles.TableTd>від 800</Styles.TableTd>
-            <Styles.TableTd>від 800</Styles.TableTd>
+            </Td>
+            <Td>від 400</Td>
+            <Td>від 400</Td>
+            <Td>від 600</Td>
+            <Td>від 700</Td>
+            <Td>від 800</Td>
+            <Td>від 800</Td>
+            <Td>від 800</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>
+            <Td>
               Заміна елементів ланцюгів
               <br />
               управління дисплеєм
               <br />
               та тачскрином
-            </Styles.TableTd>
-            <Styles.TableTd>від 500</Styles.TableTd>
-            <Styles.TableTd>від 500</Styles.TableTd>
-            <Styles.TableTd>від 700</Styles.TableTd>
-            <Styles.TableTd>від 800</Styles.TableTd>
-            <Styles.TableTd>від 900</Styles.TableTd>
-            <Styles.TableTd>від 900</Styles.TableTd>
-            <Styles.TableTd>від 900</Styles.TableTd>
+            </Td>
+            <Td>від 500</Td>
+            <Td>від 500</Td>
+            <Td>від 700</Td>
+            <Td>від 800</Td>
+            <Td>від 900</Td>
+            <Td>від 900</Td>
+            <Td>від 900</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>
+            <Td>
               Заміна елементів ланцюга
               <br />
               Wi-Fi
-            </Styles.TableTd>
-            <Styles.TableTd>від 600</Styles.TableTd>
-            <Styles.TableTd>від 600</Styles.TableTd>
-            <Styles.TableTd>від 700</Styles.TableTd>
-            <Styles.TableTd>від 800</Styles.TableTd>
-            <Styles.TableTd>від 900</Styles.TableTd>
-            <Styles.TableTd>від 900</Styles.TableTd>
-            <Styles.TableTd>від 900</Styles.TableTd>
+            </Td>
+            <Td>від 600</Td>
+            <Td>від 600</Td>
+            <Td>від 700</Td>
+            <Td>від 800</Td>
+            <Td>від 900</Td>
+            <Td>від 900</Td>
+            <Td>від 900</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>Чищення від води</Styles.TableTd>
-            <Styles.TableTd>350</Styles.TableTd>
-            <Styles.TableTd>450</Styles.TableTd>
-            <Styles.TableTd>550</Styles.TableTd>
-            <Styles.TableTd>550</Styles.TableTd>
-            <Styles.TableTd>700</Styles.TableTd>
-            <Styles.TableTd>800</Styles.TableTd>
-            <Styles.TableTd>800</Styles.TableTd>
+            <Td>Чищення від води</Td>
+            <Td>350</Td>
+            <Td>450</Td>
+            <Td>550</Td>
+            <Td>550</Td>
+            <Td>700</Td>
+            <Td>800</Td>
+            <Td>800</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>SIM-утримувач</Styles.TableTd>
-            <Styles.TableTd>50</Styles.TableTd>
-            <Styles.TableTd>50</Styles.TableTd>
-            <Styles.TableTd>-</Styles.TableTd>
-            <Styles.TableTd>50</Styles.TableTd>
-            <Styles.TableTd>50</Styles.TableTd>
-            <Styles.TableTd>50</Styles.TableTd>
-            <Styles.TableTd>50</Styles.TableTd>
+            <Td>SIM-утримувач</Td>
+            <Td>50</Td>
+            <Td>50</Td>
+            <Td>-</Td>
+            <Td>50</Td>
+            <Td>50</Td>
+            <Td>50</Td>
+            <Td>50</Td>
           </Styles.TableTr>
         </Tbody>
         <Tfoot>
           <Styles.TableTr>
-            <Styles.TableTh color="red.500">Послуги</Styles.TableTh>
-            <Styles.TableTh color="red.500">iPad 2 / 3 / 4</Styles.TableTh>
-            <Styles.TableTh color="red.500">iPad Mini 1 / 2 / 3</Styles.TableTh>
-            <Styles.TableTh color="red.500">iPad Air / 2017</Styles.TableTh>
-            <Styles.TableTh color="red.500">iPad Air 2</Styles.TableTh>
-            <Styles.TableTh color="red.500">iPad Mini 4</Styles.TableTh>
-            <Styles.TableTh color="red.500">iPad Pro 9.7 / 12.9</Styles.TableTh>
-            <Styles.TableTh color="red.500">iPad Pro 10.5</Styles.TableTh>
+            <Th color="red.500">Послуги</Th>
+            <Th color="red.500">iPad 2 / 3 / 4</Th>
+            <Th color="red.500">iPad Mini 1 / 2 / 3</Th>
+            <Th color="red.500">iPad Air / 2017</Th>
+            <Th color="red.500">iPad Air 2</Th>
+            <Th color="red.500">iPad Mini 4</Th>
+            <Th color="red.500">iPad Pro 9.7 / 12.9</Th>
+            <Th color="red.500">iPad Pro 10.5</Th>
           </Styles.TableTr>
         </Tfoot>
       </Table>

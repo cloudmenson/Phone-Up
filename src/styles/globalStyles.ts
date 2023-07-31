@@ -1,8 +1,6 @@
 import { css, createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-
-
   * {
     padding: 0;
     margin: 0;
@@ -12,6 +10,8 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 18px;
     line-height: 18px;
     font-weight: 400;
+    color: #FFFFFF !important;
+    font-family: 'Open Sans', sans-serif, 'Montserrat', sans-serif !important;
   }
 
   input {
@@ -20,7 +20,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   a {
-    text-decoration: none;
+    text-decoration: none !important;
   }
 
   button {

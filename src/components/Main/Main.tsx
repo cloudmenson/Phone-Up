@@ -1,3 +1,13 @@
+import { FiTv } from "react-icons/fi";
+import { MdComputer } from "react-icons/md";
+import { PhoneIcon } from "@chakra-ui/icons";
+import { FaRegHandshake } from "react-icons/fa";
+import { RiComputerLine, RiAndroidLine } from "react-icons/ri";
+import {
+  AiOutlineApple,
+  AiOutlineTablet,
+  AiFillEnvironment,
+} from "react-icons/ai";
 import {
   Box,
   Img,
@@ -10,25 +20,15 @@ import {
   ListItem,
   ListIcon,
 } from "@chakra-ui/react";
-import { PhoneIcon } from "@chakra-ui/icons";
-import {
-  AiOutlineApple,
-  AiOutlineTablet,
-  AiFillEnvironment,
-} from "react-icons/ai";
-import { RiComputerLine, RiAndroidLine } from "react-icons/ri";
-import { MdComputer } from "react-icons/md";
-import { FiTv } from "react-icons/fi";
-import { FaRegHandshake } from "react-icons/fa";
-import { Link as ScrollLink } from "react-scroll";
 
-import ServiceImage1 from "../../assets/img/service-image1.svg";
+import { Service } from "assets";
+import { Map, IphonePrice, IpadPrice, MacbookPrice } from "components";
 
 import * as Styles from "./styles";
 
-export const Main = () => {
+const MainPage = () => {
   return (
-    <main className="App__main">
+    <Styles.Main>
       <Flex
         flexDirection={{
           base: "column",
@@ -47,26 +47,28 @@ export const Main = () => {
           id="about-us-section"
           sx={{ margin: "40px 0 70px" }}
           textAlign={{
-            base: "center",
-            sm: "center",
             md: "left",
             lg: "left",
+            sm: "center",
+            base: "center",
           }}
         >
           <Heading
             as="h2"
             fontSize={{
-              base: "18px",
               sm: "20px",
               md: "22px",
               lg: "26px",
+              base: "18px",
             }}
           >
             Швидкий та якісний ремонт - запорука вашої внутрішньої гармонії
           </Heading>
           <Heading
-            className="App__main-title"
             as="h1"
+            position={"relative"}
+            paddingBottom={"20px"}
+            display={"inline-block"}
             fontSize={{
               sm: "24px",
               md: "26px",
@@ -80,7 +82,9 @@ export const Main = () => {
               base: "25px",
             }}
           >
-            Phone Up - Сервісний центр
+            <Styles.HeadingWithLine>
+              Phone Up - Сервісний центр
+            </Styles.HeadingWithLine>
           </Heading>
           <Text
             sx={{
@@ -88,29 +92,27 @@ export const Main = () => {
               maxWidth: "800px",
             }}
             fontSize={{
-              base: "16px",
               md: "18px",
               lg: "20px",
+              base: "16px",
             }}
           >
             Наш індивідуальний підхід до кожного клієнта дозволяє знайти
             оптимальне вирішення проблеми
           </Text>
           <Box sx={{ margin: "50px 0" }}>
-            <ScrollLink
+            <Styles.LinkTo
               spy={true}
               smooth={true}
               duration={1000}
               to="more-section"
-              className="App__main-btn-link"
             >
               Дізнатися більше
-            </ScrollLink>
+            </Styles.LinkTo>
           </Box>
         </Box>
         <Spacer />
-        <Box
-          className="App__main-service-image-container"
+        <Styles.Box
           display={{
             sm: "none",
             md: "inline-block",
@@ -122,38 +124,36 @@ export const Main = () => {
             lg: "none",
           }}
         >
-          <Img
-            width={{ sm: "680px" }}
-            src={ServiceImage1}
-            alt="service-image"
-          />
-        </Box>
+          <Img src={Service} alt="service-image" width={{ sm: "680px" }} />
+        </Styles.Box>
       </Flex>
-      <Box className="App__main-services" id="more-section">
+      <Box id="more-section">
         <Flex
           fontSize={{
-            base: "16px",
             md: "18px",
             lg: "20px",
+            base: "16px",
           }}
           sx={{
-            padding: "40px 0 30px",
             alignItems: "center",
+            padding: "40px 0 30px",
             flexDirection: "column",
           }}
         >
           <Heading
+            as="h2"
+            position={"relative"}
+            id="services-section"
+            paddingBottom={"20px"}
+            display={"inline-block"}
             fontSize={{
               base: "22px",
               sm: "24px",
               md: "26px",
               lg: "30px",
             }}
-            className="App__main-title"
-            as="h2"
-            id="services-section"
           >
-            Послуги
+            <Styles.HeadingWithLine>Послуги</Styles.HeadingWithLine>
           </Heading>
           <Text
             sx={{
@@ -184,7 +184,7 @@ export const Main = () => {
                   alignItems: "center",
                 }}
               >
-                <AiOutlineApple className="App__main-services-icon" />
+                <AiOutlineApple />
                 <Text sx={{ paddingLeft: "10px" }}>Apple</Text>
               </Flex>
               <Flex
@@ -193,7 +193,7 @@ export const Main = () => {
                   alignItems: "center",
                 }}
               >
-                <AiOutlineTablet className="App__main-services-icon" />
+                <AiOutlineTablet />
                 <Text sx={{ paddingLeft: "10px" }}>Планшети</Text>
               </Flex>
               <Flex
@@ -202,7 +202,7 @@ export const Main = () => {
                   alignItems: "center",
                 }}
               >
-                <MdComputer className="App__main-services-icon" />
+                <MdComputer />
                 <Text sx={{ paddingLeft: "10px" }}>Ноутбуки</Text>
               </Flex>
               <Flex
@@ -211,7 +211,7 @@ export const Main = () => {
                   alignItems: "center",
                 }}
               >
-                <FiTv className="App__main-services-icon" />
+                <FiTv />
                 <Text sx={{ paddingLeft: "10px" }}>Телевізори</Text>
               </Flex>
               <Flex
@@ -220,7 +220,7 @@ export const Main = () => {
                   alignItems: "center",
                 }}
               >
-                <RiComputerLine className="App__main-services-icon" />
+                <RiComputerLine />
                 <Text sx={{ paddingLeft: "10px" }}>Системні блоки</Text>
               </Flex>
               <Flex
@@ -229,7 +229,7 @@ export const Main = () => {
                   alignItems: "center",
                 }}
               >
-                <FaRegHandshake className="App__main-services-icon" />
+                <FaRegHandshake />
                 <Text sx={{ paddingLeft: "10px" }}>
                   Збираємо компʼютер під замовлення
                 </Text>
@@ -256,29 +256,28 @@ export const Main = () => {
             }}
             sx={{ margin: "50px 0" }}
           >
-            <ScrollLink
-              to="price-section"
-              className="App__main-btn-link"
+            <Styles.LinkTo
               spy={true}
               smooth={true}
               duration={1000}
+              to="price-section"
             >
               Дивитися цiни
-            </ScrollLink>
+            </Styles.LinkTo>
           </Box>
         </Flex>
         <Box
           id="price-section"
           display={{
-            base: "none",
             sm: "none",
             md: "block",
             lg: "block",
+            base: "none",
           }}
         >
           <IphonePrice />
           <IpadPrice />
-          <MacBookPrice />
+          <MacbookPrice />
         </Box>
         <Flex
           sx={{
@@ -286,47 +285,41 @@ export const Main = () => {
             justifyContent: "center",
           }}
         >
-          <ScrollLink
-            to="contacts-section"
+          <Styles.LinkTo
             spy={true}
             smooth={true}
             duration={1000}
-            className="App__main-btn-link"
+            to="contacts-section"
           >
             Контакти
-          </ScrollLink>
+          </Styles.LinkTo>
         </Flex>
       </Box>
-      <Flex className="App__main-contacts">
-        <Box className="App__main-map-container" sx={{ marginTop: "25px" }}>
-          <Map />
-        </Box>
+      <Styles.Flex>
         <Box
-          sx={{ textAlign: "center" }}
-          marginLeft={{
-            sm: "0",
-            md: "0",
-            lg: "50px",
-          }}
           fontSize={{
-            base: "16px",
             md: "18px",
             lg: "20px",
+            base: "16px",
           }}
         >
           <Heading
+            as="h2"
+            position={"relative"}
             id="contacts-section"
+            paddingBottom={"20px"}
+            display={"inline-block"}
+            maxWidth={{ base: "500px" }}
             fontSize={{
               base: "22px",
               sm: "24px",
               md: "26px",
               lg: "30px",
             }}
-            maxWidth={{ base: "500px" }}
-            className="App__main-title"
-            as="h2"
           >
-            Отримайте персональні рекомендації, звʼязавшись з нами
+            <Styles.HeadingWithLine>
+              Отримайте персональні рекомендації, звʼязавшись з нами
+            </Styles.HeadingWithLine>
           </Heading>
           <Text sx={{ margin: "50px  0" }}>
             Ви можете зателефонувати або відвідати нас одразу. Оберіть
@@ -373,9 +366,12 @@ export const Main = () => {
             </List>
           </Box>
         </Box>
-      </Flex>
-    </main>
+        <Box sx={{ marginTop: "50px" }}>
+          <Map />
+        </Box>
+      </Styles.Flex>
+    </Styles.Main>
   );
 };
 
-export default Main;
+export { MainPage };

@@ -1,4 +1,4 @@
-import { Link, Flex, Spacer, Box, Text, Img } from "@chakra-ui/react";
+import { Link, Box, Text, Img } from "@chakra-ui/react";
 
 import { Logo } from "assets";
 
@@ -7,25 +7,27 @@ import * as Styles from "./styles";
 const Footer = () => {
   return (
     <Styles.Footer>
-      <Flex
+      <Styles.Flex
         sx={{
-          padding: "3px 0",
           textAlign: "center",
           alignItems: "center",
+          flexDirection: "row",
+          justifyContent: "space-between",
         }}
       >
         <Box>
-          <Link href="#">
-            <Img src={Logo} height="75px" width="155px" alt="Phone Up" />
+          <Link href="/">
+            <Img src={Logo} width="155px" height="75px" alt="Phone Up" />
           </Link>
         </Box>
-        <Spacer />
         <Box>
           <Text
+            fontWeight={500}
+            textTransform={"uppercase"}
             fontSize={{
               sm: "14px",
               lg: "16px",
-              base: "10px",
+              base: "12px",
             }}
           >
             © 2022 COPYRIGHTS BY PHONE UP - ALL RIGHTS RESERVED.
@@ -41,7 +43,7 @@ const Footer = () => {
             <Styles.ArrowUpLink />
           </Styles.LinkTo>
         </Box>
-      </Flex>
+      </Styles.Flex>
     </Styles.Footer>
   );
 };

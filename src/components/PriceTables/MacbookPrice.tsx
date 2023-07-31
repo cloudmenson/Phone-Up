@@ -1,4 +1,6 @@
 import {
+  Td,
+  Th,
   Box,
   Img,
   Text,
@@ -38,132 +40,132 @@ const MacbookPrice = () => {
       <Table id="services-section" size={{ base: "sm" }}>
         <Thead>
           <Styles.TableTr>
-            <Styles.TableTh color="red.500">Послуги</Styles.TableTh>
-            <Styles.TableTh color="red.500">MacBook Air 11 / 13</Styles.TableTh>
-            <Styles.TableTh color="red.500">MacBook Pro 13</Styles.TableTh>
-            <Styles.TableTh color="red.500">MacBook Pro 15</Styles.TableTh>
-            <Styles.TableTh color="red.500">Macbook 12</Styles.TableTh>
-            <Styles.TableTh color="red.500">iMac</Styles.TableTh>
+            <Th color="red.500">Послуги</Th>
+            <Th color="red.500">MacBook Air 11 / 13</Th>
+            <Th color="red.500">MacBook Pro 13</Th>
+            <Th color="red.500">MacBook Pro 15</Th>
+            <Th color="red.500">Macbook 12</Th>
+            <Th color="red.500">iMac</Th>
           </Styles.TableTr>
         </Thead>
         <Tbody>
           <Styles.TableTr>
-            <Styles.TableTd>Чищення від води</Styles.TableTd>
-            <Styles.TableTd>від 500</Styles.TableTd>
-            <Styles.TableTd>від 500</Styles.TableTd>
-            <Styles.TableTd>від 500</Styles.TableTd>
-            <Styles.TableTd>від 500</Styles.TableTd>
-            <Styles.TableTd>від 500</Styles.TableTd>
+            <Td>Чищення від води</Td>
+            <Td>від 500</Td>
+            <Td>від 500</Td>
+            <Td>від 500</Td>
+            <Td>від 500</Td>
+            <Td>від 500</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>Заміна батареї</Styles.TableTd>
-            <Styles.TableTd>2700</Styles.TableTd>
-            <Styles.TableTd>від 2000</Styles.TableTd>
-            <Styles.TableTd>від 2000</Styles.TableTd>
-            <Styles.TableTd>від 3000</Styles.TableTd>
-            <Styles.TableTd>-</Styles.TableTd>
+            <Td>Заміна батареї</Td>
+            <Td>2700</Td>
+            <Td>від 2000</Td>
+            <Td>від 2000</Td>
+            <Td>від 3000</Td>
+            <Td>-</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>Заміна дисплея</Styles.TableTd>
-            <Styles.TableTd>від 8000</Styles.TableTd>
-            <Styles.TableTd>від 8000</Styles.TableTd>
-            <Styles.TableTd>від 8000</Styles.TableTd>
-            <Styles.TableTd>від 8000</Styles.TableTd>
-            <Styles.TableTd>від 8000</Styles.TableTd>
+            <Td>Заміна дисплея</Td>
+            <Td>від 8000</Td>
+            <Td>від 8000</Td>
+            <Td>від 8000</Td>
+            <Td>від 8000</Td>
+            <Td>від 8000</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>Замена клавиатуры</Styles.TableTd>
-            <Styles.TableTd>от 1000</Styles.TableTd>
-            <Styles.TableTd>от 1000</Styles.TableTd>
-            <Styles.TableTd>от 1000</Styles.TableTd>
-            <Styles.TableTd>от 1000</Styles.TableTd>
-            <Styles.TableTd>-</Styles.TableTd>
+            <Td>Замена клавиатуры</Td>
+            <Td>от 1000</Td>
+            <Td>от 1000</Td>
+            <Td>от 1000</Td>
+            <Td>от 1000</Td>
+            <Td>-</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>Заміна тачпада</Styles.TableTd>
-            <Styles.TableTd>від 2000</Styles.TableTd>
-            <Styles.TableTd>від 2000</Styles.TableTd>
-            <Styles.TableTd>від 2000</Styles.TableTd>
-            <Styles.TableTd>від 2000</Styles.TableTd>
-            <Styles.TableTd>-</Styles.TableTd>
+            <Td>Заміна тачпада</Td>
+            <Td>від 2000</Td>
+            <Td>від 2000</Td>
+            <Td>від 2000</Td>
+            <Td>від 2000</Td>
+            <Td>-</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>Заміна дроту блоку живлення</Styles.TableTd>
-            <Styles.TableTd>600</Styles.TableTd>
-            <Styles.TableTd>600</Styles.TableTd>
-            <Styles.TableTd>600</Styles.TableTd>
-            <Styles.TableTd>-</Styles.TableTd>
-            <Styles.TableTd>-</Styles.TableTd>
+            <Td>Заміна дроту блоку живлення</Td>
+            <Td>600</Td>
+            <Td>600</Td>
+            <Td>600</Td>
+            <Td>-</Td>
+            <Td>-</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>Заміна SSD/HDD</Styles.TableTd>
-            <Styles.TableTd>от 2000</Styles.TableTd>
-            <Styles.TableTd>от 2000</Styles.TableTd>
-            <Styles.TableTd>от 2000</Styles.TableTd>
-            <Styles.TableTd>от 2000</Styles.TableTd>
-            <Styles.TableTd>от 2000</Styles.TableTd>
+            <Td>Заміна SSD/HDD</Td>
+            <Td>от 2000</Td>
+            <Td>от 2000</Td>
+            <Td>от 2000</Td>
+            <Td>от 2000</Td>
+            <Td>от 2000</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>Заміна динаміка</Styles.TableTd>
-            <Styles.TableTd>від 700</Styles.TableTd>
-            <Styles.TableTd>від 700</Styles.TableTd>
-            <Styles.TableTd>від 700</Styles.TableTd>
-            <Styles.TableTd>від 700</Styles.TableTd>
-            <Styles.TableTd>від 700</Styles.TableTd>
+            <Td>Заміна динаміка</Td>
+            <Td>від 700</Td>
+            <Td>від 700</Td>
+            <Td>від 700</Td>
+            <Td>від 700</Td>
+            <Td>від 700</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>Заміна кулера</Styles.TableTd>
-            <Styles.TableTd>від 700</Styles.TableTd>
-            <Styles.TableTd>від 700</Styles.TableTd>
-            <Styles.TableTd>від 700</Styles.TableTd>
-            <Styles.TableTd>від 700</Styles.TableTd>
-            <Styles.TableTd>від 700</Styles.TableTd>
+            <Td>Заміна кулера</Td>
+            <Td>від 700</Td>
+            <Td>від 700</Td>
+            <Td>від 700</Td>
+            <Td>від 700</Td>
+            <Td>від 700</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>Заміна термопасти</Styles.TableTd>
-            <Styles.TableTd>300</Styles.TableTd>
-            <Styles.TableTd>300</Styles.TableTd>
-            <Styles.TableTd>300</Styles.TableTd>
-            <Styles.TableTd>300</Styles.TableTd>
-            <Styles.TableTd>300</Styles.TableTd>
+            <Td>Заміна термопасти</Td>
+            <Td>300</Td>
+            <Td>300</Td>
+            <Td>300</Td>
+            <Td>300</Td>
+            <Td>300</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>
+            <Td>
               Чищення від пилу та
               <br />
               профілактика охолодження
-            </Styles.TableTd>
-            <Styles.TableTd>300</Styles.TableTd>
-            <Styles.TableTd>300</Styles.TableTd>
-            <Styles.TableTd>300</Styles.TableTd>
-            <Styles.TableTd>300</Styles.TableTd>
-            <Styles.TableTd>300</Styles.TableTd>
+            </Td>
+            <Td>300</Td>
+            <Td>300</Td>
+            <Td>300</Td>
+            <Td>300</Td>
+            <Td>300</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>Заміна роз'єму живлення</Styles.TableTd>
-            <Styles.TableTd>від 1000</Styles.TableTd>
-            <Styles.TableTd>від 1000</Styles.TableTd>
-            <Styles.TableTd>від 1000</Styles.TableTd>
-            <Styles.TableTd>від 1000</Styles.TableTd>
-            <Styles.TableTd>від 1000</Styles.TableTd>
+            <Td>Заміна роз'єму живлення</Td>
+            <Td>від 1000</Td>
+            <Td>від 1000</Td>
+            <Td>від 1000</Td>
+            <Td>від 1000</Td>
+            <Td>від 1000</Td>
           </Styles.TableTr>
           <Styles.TableTr>
-            <Styles.TableTd>Заміна антени Wi-Fi</Styles.TableTd>
-            <Styles.TableTd>від 700</Styles.TableTd>
-            <Styles.TableTd>від 700</Styles.TableTd>
-            <Styles.TableTd>від 700</Styles.TableTd>
-            <Styles.TableTd>від 700</Styles.TableTd>
-            <Styles.TableTd>від 700</Styles.TableTd>
+            <Td>Заміна антени Wi-Fi</Td>
+            <Td>від 700</Td>
+            <Td>від 700</Td>
+            <Td>від 700</Td>
+            <Td>від 700</Td>
+            <Td>від 700</Td>
           </Styles.TableTr>
         </Tbody>
         <Tfoot>
           <Styles.TableTr>
-            <Styles.TableTh color="red.500">Послуги</Styles.TableTh>
-            <Styles.TableTh color="red.500">MacBook Air 11 / 13</Styles.TableTh>
-            <Styles.TableTh color="red.500">MacBook Pro 13</Styles.TableTh>
-            <Styles.TableTh color="red.500">MacBook Pro 15</Styles.TableTh>
-            <Styles.TableTh color="red.500">Macbook 12</Styles.TableTh>
-            <Styles.TableTh color="red.500">iMac</Styles.TableTh>
+            <Th color="red.500">Послуги</Th>
+            <Th color="red.500">MacBook Air 11 / 13</Th>
+            <Th color="red.500">MacBook Pro 13</Th>
+            <Th color="red.500">MacBook Pro 15</Th>
+            <Th color="red.500">Macbook 12</Th>
+            <Th color="red.500">iMac</Th>
           </Styles.TableTr>
         </Tfoot>
       </Table>
