@@ -15,8 +15,6 @@ export const Wrapper = styled.div`
 export const Image = styled.img`
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 60px;
   height: 60px;
   animation: rotate 6s linear infinite;
