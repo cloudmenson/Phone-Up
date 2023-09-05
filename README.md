@@ -3,7 +3,14 @@
 Business card website on order to improve store attendance
 
 `Components:` 
-- React 
+- React
+- TypeScript
 - React-leaflet 
 - Chakra UI 
-- Netlify
+- Framer-motion
+- Prettier
+- React-anchor
+- React-icons
+- React-intersection-observer
+- Styled-components
+- Netlify service
