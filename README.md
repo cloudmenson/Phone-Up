@@ -15,5 +15,5 @@ Business card website on order to improve store attendance
 - Styled-components
 
 `Services:`
-- Netlify service
+- Netlify
 
