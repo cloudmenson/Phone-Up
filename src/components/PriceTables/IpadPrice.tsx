@@ -11,7 +11,7 @@ import {
   TableContainer,
 } from "@chakra-ui/react";
 
-import { Ipad } from "assets";
+import * as Image from "assets";
 
 import * as Styles from "./styles";
 
@@ -29,7 +29,7 @@ const IpadPrice = () => {
       >
         <Img
           alt="ipad"
-          src={Ipad}
+          src={Image.Ipad}
           sx={{
             width: "50px",
             height: "50px",

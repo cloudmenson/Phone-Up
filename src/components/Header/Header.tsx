@@ -15,7 +15,7 @@ import {
   BreadcrumbItem,
 } from "@chakra-ui/react";
 
-import { Logo } from "assets";
+import * as Image from "assets";
 
 import * as Styles from "./styles";
 
@@ -31,7 +31,7 @@ const Header = () => {
       >
         <Box>
           <Link href="/">
-            <Img src={Logo} height="75px" width="155px" alt="Phone-Up" />
+            <Img src={Image.Logo} height="75px" width="155px" alt="Phone-Up" />
           </Link>
         </Box>
         <Spacer />

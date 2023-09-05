@@ -11,7 +11,7 @@ import {
   TableContainer,
 } from "@chakra-ui/react";
 
-import { Macbook } from "assets";
+import * as Image from "assets";
 
 import * as Styles from "./styles";
 
@@ -32,7 +32,7 @@ const MacbookPrice = () => {
             width: "50px",
             height: "50px",
           }}
-          src={Macbook}
+          src={Image.Macbook}
           alt="MacBook"
         />
         <Text>MacBook</Text>

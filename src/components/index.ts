@@ -4,4 +4,5 @@ export { IpadPrice } from "../components/PriceTables/IpadPrice";
 export { IphonePrice } from "../components/PriceTables/IphonePrice";
 export { MacbookPrice } from "../components/PriceTables/MacbookPrice";
 export { MainPage } from "../components/Main/Main";
+export { Preloader } from "../components/common/Preloader/Preloader";
 export { Map } from "../components/Map/Map";

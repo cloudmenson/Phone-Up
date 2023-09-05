@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import { FiTv } from "react-icons/fi";
 import { MdComputer } from "react-icons/md";
 import { PhoneIcon } from "@chakra-ui/icons";
 import { FaRegHandshake } from "react-icons/fa";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { RiComputerLine, RiAndroidLine } from "react-icons/ri";
+
 import {
   AiOutlineApple,
   AiOutlineTablet,
@@ -27,6 +31,17 @@ import { Map, IphonePrice, IpadPrice, MacbookPrice } from "components";
 import * as Styles from "./styles";
 
 const MainPage = () => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start({ opacity: 1, y: 0 });
+    }
+  }, [controls, inView]);
+
   return (
     <Styles.Main>
       <Flex
@@ -53,17 +68,24 @@ const MainPage = () => {
             base: "center",
           }}
         >
-          <Heading
-            as="h2"
-            fontSize={{
-              sm: "20px",
-              md: "22px",
-              lg: "26px",
-              base: "18px",
-            }}
+          <motion.div
+            ref={ref}
+            animate={controls}
+            transition={{ duration: 1 }}
+            initial={{ opacity: 0, y: 25 }}
           >
-            Швидкий та якісний ремонт - запорука вашої внутрішньої гармонії
-          </Heading>
+            <Heading
+              as="h2"
+              fontSize={{
+                sm: "20px",
+                md: "22px",
+                lg: "26px",
+                base: "18px",
+              }}
+            >
+              Швидкий та якісний ремонт - запорука вашої внутрішньої гармонії
+            </Heading>
+          </motion.div>
           <Heading
             as="h1"
             position={"relative"}
@@ -86,29 +108,45 @@ const MainPage = () => {
               Phone Up - Сервісний центр
             </Styles.HeadingWithLine>
           </Heading>
-          <Text
-            sx={{
-              marginTop: "30px",
-              maxWidth: "800px",
-            }}
-            fontSize={{
-              md: "18px",
-              lg: "20px",
-              base: "16px",
-            }}
+
+          <motion.div
+            ref={ref}
+            animate={controls}
+            transition={{ duration: 1 }}
+            initial={{ opacity: 0, y: -25 }}
           >
-            Наш індивідуальний підхід до кожного клієнта дозволяє знайти
-            оптимальне вирішення проблеми
-          </Text>
-          <Box sx={{ margin: "50px 0" }}>
-            <Styles.LinkTo
-              spy={true}
-              smooth={true}
-              duration={1000}
-              to="more-section"
+            <Text
+              sx={{
+                marginTop: "30px",
+                maxWidth: "800px",
+              }}
+              fontSize={{
+                md: "18px",
+                lg: "20px",
+                base: "16px",
+              }}
             >
-              Дізнатися більше
-            </Styles.LinkTo>
+              Наш індивідуальний підхід до кожного клієнта дозволяє знайти
+              оптимальне вирішення проблеми
+            </Text>
+          </motion.div>
+
+          <Box sx={{ margin: "50px 0" }}>
+            <motion.div
+              ref={ref}
+              animate={controls}
+              transition={{ duration: 2 }}
+              initial={{ opacity: 0, y: 0 }}
+            >
+              <Styles.LinkTo
+                spy={true}
+                smooth={true}
+                duration={1000}
+                to="more-section"
+              >
+                Дізнатися більше
+              </Styles.LinkTo>
+            </motion.div>
           </Box>
         </Box>
         <Spacer />
@@ -136,7 +174,7 @@ const MainPage = () => {
           }}
           sx={{
             alignItems: "center",
-            padding: "40px 0 30px",
+            padding: "30px 0 30px",
             flexDirection: "column",
           }}
         >
@@ -231,7 +269,8 @@ const MainPage = () => {
               >
                 <FaRegHandshake />
                 <Text sx={{ paddingLeft: "10px" }}>
-                  Збираємо компʼютер під замовлення
+                  Збираємо компʼютер <br />
+                  під замовлення
                 </Text>
               </Flex>
             </Box>
@@ -281,7 +320,7 @@ const MainPage = () => {
         </Box>
         <Flex
           sx={{
-            margin: "50px 0",
+            margin: "20px 0",
             justifyContent: "center",
           }}
         >

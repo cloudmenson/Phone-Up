@@ -1,10 +1,12 @@
 import { Link, Box, Text, Img } from "@chakra-ui/react";
 
-import { Logo } from "assets";
+import * as Image from "assets";
 
 import * as Styles from "./styles";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <Styles.Footer>
       <Styles.Flex
@@ -17,7 +19,7 @@ const Footer = () => {
       >
         <Box>
           <Link href="/">
-            <Img src={Logo} width="155px" height="75px" alt="Phone Up" />
+            <Img src={Image.Logo} width="155px" height="75px" alt="Phone Up" />
           </Link>
         </Box>
         <Box>
@@ -30,7 +32,7 @@ const Footer = () => {
               base: "12px",
             }}
           >
-            © 2022 COPYRIGHTS BY PHONE UP - ALL RIGHTS RESERVED.
+            © {currentYear} COPYRIGHTS BY PHONE UP - ALL RIGHTS RESERVED.
           </Text>
         </Box>
         <Box>
