@@ -13,4 +13,7 @@ Business card website on order to improve store attendance
 - React-icons
 - React-intersection-observer
 - Styled-components
+
+`Services:`
 - Netlify service
+
