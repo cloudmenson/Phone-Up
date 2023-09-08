@@ -1,6 +1,7 @@
 # Phone Up: https://phone-up-dnipro.com
 
-Business card website on order to improve store attendance
+The application and design were developed according to individual requirements with the goal
+of attracting new customers and providing them with information about the service in an online mode.
 
 `Components:` 
 - React
