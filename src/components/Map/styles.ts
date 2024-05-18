@@ -52,7 +52,7 @@ export const StylizedContainer = styled.div`
 
   @media (max-width: 376px) {
     .leaflet-container {
-      width: 300px;
+      width: 350px;
     }
   }
 `;

@@ -71,7 +71,7 @@ const MainPage = () => {
           <motion.div
             ref={ref}
             animate={controls}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1, delay: 1 }}
             initial={{ opacity: 0, y: 25 }}
           >
             <Heading
@@ -86,6 +86,7 @@ const MainPage = () => {
               Швидкий та якісний ремонт - запорука вашої внутрішньої гармонії
             </Heading>
           </motion.div>
+
           <Heading
             as="h1"
             position={"relative"}
@@ -105,15 +106,15 @@ const MainPage = () => {
             }}
           >
             <Styles.HeadingWithLine>
-              Phone Up - Сервісний центр
+              Phone Up - Сервісний центр у місті Тернопіль
             </Styles.HeadingWithLine>
           </Heading>
 
           <motion.div
             ref={ref}
             animate={controls}
-            transition={{ duration: 1 }}
-            initial={{ opacity: 0, y: -25 }}
+            transition={{ duration: 1, delay: 1.5 }}
+            initial={{ opacity: 0, y: 25 }}
           >
             <Text
               sx={{
@@ -135,7 +136,7 @@ const MainPage = () => {
             <motion.div
               ref={ref}
               animate={controls}
-              transition={{ duration: 2 }}
+              transition={{ duration: 1, delay: 3 }}
               initial={{ opacity: 0, y: 0 }}
             >
               <Styles.LinkTo
@@ -165,7 +166,8 @@ const MainPage = () => {
           <Img src={Service} alt="service-image" width={{ sm: "680px" }} />
         </Styles.Box>
       </Flex>
-      <Box id="more-section">
+
+      <Box sx={{ backgroundImage:  }} id="more-section">
         <Flex
           fontSize={{
             md: "18px",
@@ -206,75 +208,175 @@ const MainPage = () => {
             Що ми ремонтуємо?
           </Text>
           <Flex>
-            <Box sx={{ textAlign: "center" }}>
-              <Flex
-                sx={{
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
+            <motion.circle
+              initial={{ pathLength: 0 }}
+              animate={{ pathLength: 1 }}
+            />
+
+            <Box
+              sx={{
+                textAlign: "center",
+                display: "flex",
+                flexDirection: "row",
+                flexWrap: "wrap",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: "20px",
+                marginTop: "20px",
+              }}
+            >
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
               >
-                <RiAndroidLine />
-                <Text sx={{ paddingLeft: "10px" }}>Android</Text>
-              </Flex>
-              <Flex
-                sx={{
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
+                <Flex
+                  sx={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    border: "1px solid white",
+                    borderRadius: "6px",
+                    width: "300px",
+                    height: "100px",
+                    overflow: "hidden",
+                    backgroundColor: "#000000",
+                  }}
+                >
+                  <RiAndroidLine />
+                  <Text sx={{ paddingLeft: "10px" }}>Android</Text>
+                </Flex>
+              </motion.button>
+
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
               >
-                <AiOutlineApple />
-                <Text sx={{ paddingLeft: "10px" }}>Apple</Text>
-              </Flex>
-              <Flex
-                sx={{
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
+                <Flex
+                  sx={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    border: "1px solid white",
+                    borderRadius: "6px",
+                    width: "300px",
+                    height: "100px",
+                    overflow: "hidden",
+                    backgroundColor: "#000000",
+                  }}
+                >
+                  <AiOutlineApple />
+                  <Text sx={{ paddingLeft: "10px" }}>Apple</Text>
+                </Flex>
+              </motion.button>
+
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
               >
-                <AiOutlineTablet />
-                <Text sx={{ paddingLeft: "10px" }}>Планшети</Text>
-              </Flex>
-              <Flex
-                sx={{
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
+                <Flex
+                  sx={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    border: "1px solid white",
+                    borderRadius: "6px",
+                    width: "300px",
+                    height: "100px",
+                    overflow: "hidden",
+                    backgroundColor: "#000000",
+                  }}
+                >
+                  <AiOutlineTablet />
+                  <Text sx={{ paddingLeft: "10px" }}>Планшети</Text>
+                </Flex>
+              </motion.button>
+
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
               >
-                <MdComputer />
-                <Text sx={{ paddingLeft: "10px" }}>Ноутбуки</Text>
-              </Flex>
-              <Flex
-                sx={{
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
+                <Flex
+                  sx={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    border: "1px solid white",
+                    borderRadius: "6px",
+                    width: "300px",
+                    height: "100px",
+                    overflow: "hidden",
+                    backgroundColor: "#000000",
+                  }}
+                >
+                  <MdComputer />
+                  <Text sx={{ paddingLeft: "10px" }}>Ноутбуки</Text>
+                </Flex>
+              </motion.button>
+
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
               >
-                <FiTv />
-                <Text sx={{ paddingLeft: "10px" }}>Телевізори</Text>
-              </Flex>
-              <Flex
-                sx={{
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
+                <Flex
+                  sx={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    border: "1px solid white",
+                    borderRadius: "6px",
+                    width: "300px",
+                    height: "100px",
+                    overflow: "hidden",
+                    backgroundColor: "#000000",
+                  }}
+                >
+                  <FiTv />
+                  <Text sx={{ paddingLeft: "10px" }}>Телевізори</Text>
+                </Flex>
+              </motion.button>
+
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
               >
-                <RiComputerLine />
-                <Text sx={{ paddingLeft: "10px" }}>Системні блоки</Text>
-              </Flex>
-              <Flex
-                sx={{
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
+                <Flex
+                  sx={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    border: "1px solid white",
+                    borderRadius: "6px",
+                    width: "300px",
+                    height: "100px",
+                    overflow: "hidden",
+                    backgroundColor: "#000000",
+                  }}
+                >
+                  <RiComputerLine />
+                  <Text sx={{ paddingLeft: "10px" }}>Системні блоки</Text>
+                </Flex>
+              </motion.button>
+
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
               >
-                <FaRegHandshake />
-                <Text sx={{ paddingLeft: "10px" }}>
-                  Збираємо компʼютер <br />
-                  під замовлення
-                </Text>
-              </Flex>
+                <Flex
+                  sx={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    border: "1px solid white",
+                    borderRadius: "6px",
+                    width: "300px",
+                    height: "100px",
+                    overflow: "hidden",
+                    backgroundColor: "#000000",
+                  }}
+                >
+                  <FaRegHandshake />
+                  <Text sx={{ paddingLeft: "10px" }}>
+                    Збираємо компʼютер <br />
+                    під замовлення
+                  </Text>
+                </Flex>
+              </motion.button>
             </Box>
           </Flex>
+
           <Text
             sx={{ textAlign: "center" }}
             maxWidth={{ base: "80%" }}
@@ -384,19 +486,8 @@ const MainPage = () => {
               <Text sx={{ fontWeight: 700 }}>Наші адреси:</Text>
               <ListItem>
                 <ListIcon as={AiFillEnvironment} color="red.500" />
-                Бульвар Слави, 46
-              </ListItem>
-              <ListItem>
-                <ListIcon as={AiFillEnvironment} color="red.500" />
-                Штурманскький провулок, 7с
-              </ListItem>
-              <ListItem>
-                <ListIcon as={AiFillEnvironment} color="red.500" />
-                Проспект Гагаріна, 99д
-              </ListItem>
-              <ListItem>
-                <ListIcon as={AiFillEnvironment} color="red.500" />
-                Юрія Кондратюка, 8, 1 поверх
+                Вже працюємо у місті Тернопіль. Наразі телефонуйте щоб дізнатися
+                адресу.
               </ListItem>
             </List>
           </Box>

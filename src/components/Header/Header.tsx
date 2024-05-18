@@ -129,6 +129,7 @@ const Header = () => {
                   smooth={true}
                   duration={600}
                   to="about-us-section"
+                  style={{ width: "100%" }}
                 >
                   <Text
                     fontSize={{
@@ -147,6 +148,7 @@ const Header = () => {
                   smooth={true}
                   duration={1000}
                   to="contacts-section"
+                  style={{ width: "100%" }}
                 >
                   <Text
                     fontSize={{
