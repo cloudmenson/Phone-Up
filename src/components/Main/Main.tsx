@@ -167,7 +167,7 @@ const MainPage = () => {
         </Styles.Box>
       </Flex>
 
-      <Box sx={{ backgroundImage:  }} id="more-section">
+      <Box id="more-section">
         <Flex
           fontSize={{
             md: "18px",
